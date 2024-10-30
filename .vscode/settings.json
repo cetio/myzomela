@@ -2,6 +2,7 @@
     "files.associations": {
         "charconv": "c",
         "builtins.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "string.h": "c"
     }
 }

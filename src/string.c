@@ -34,7 +34,7 @@ void* memset(void* restrict ptr, uint8_t val, size_t len)
     }
     len %= 16;
 #endif
-    while (--len >= 0)
+    while (--len > 0)
         *(uint8_t*)ptr++ = val;
     return ret;
 }
