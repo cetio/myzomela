@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <immintrin.h>
-#include "alloc.h"
-#include "string.h"
+#include "mzalloc.h"
 
 int main()
 {
-    alloc(48);
-    alloc(48);
+    printf("%zu\n", ((size_t)mzalloc(48 * 2)));
+    printf("%zu\n", ((size_t)mzalloc(48)));
+    printf("%zu\n", ((size_t)mzalloc(48)));
     return 0;
 }
